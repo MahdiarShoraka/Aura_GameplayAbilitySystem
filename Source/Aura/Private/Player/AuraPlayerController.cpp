@@ -16,6 +16,7 @@ void AAuraPlayerController::PlayerTick(float DeltaTime)
 {
 	Super::PlayerTick(DeltaTime);
 
+	// Highlight effect on mouse hover
 	CursorTrace();	
 }
 
