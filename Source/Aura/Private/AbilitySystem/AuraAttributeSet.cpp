@@ -23,7 +23,7 @@ void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Ou
 	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet, MaxMana, COND_None, REPNOTIFY_Always);
 }
 
-// called on clients
+// called on clients when a replicated attribute changes
 void UAuraAttributeSet::OnRep_Health(const FGameplayAttributeData& OldHeath) const
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet, Health, OldHeath);
